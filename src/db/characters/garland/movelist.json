@@ -1,0 +1,112 @@
+{
+  "sp": [{
+    "name": "Âme de Chaos",
+    "description": "L'état Âme de Chaos augmente la force de Garland, la portée et le nombre de coups de ses combos. Il obtient cet état en utilisant des attaques de Bravoure sur ses ennemis. S'il n'inflige pas de dégâts pendant un certain temps il perd cet état"
+  }],
+  "brv": [{
+    "stance": false,
+    "moves": [{
+        "name": "Round Edge",
+        "position": "Sol Neutre",
+        "description": ["Attaque circulaire de faible portée enchaînant sur un coup puissant éjéctant l'adversaire.",
+          "L'Âme de Chaos augmente le nombre de coups circulaires donnés."
+        ],
+        "command": "X>X",
+        "video": 0
+      },
+      {
+        "name": "Chain Impact",
+        "position": "Sol Avant",
+        "description": ["Attaque de portée moyenne où le premier coup ramène l'adversaire vers Garland et où le deuxième l'éjecte au loin.",
+          "L'Âme de Chaos augmente la portée du premier coup."
+        ],
+        "command": "Haut+X>X",
+        "video": 0
+      },
+      {
+        "name": "Thundaga",
+        "position": "Sol Arrière",
+        "description": ["Projectile de foudre en colonne avançant tout droit sur une distance moyenne.",
+          "L'Âme de Chaos augmente la vitesse du projectile."
+        ],
+        "command": "Bas+X",
+        "video": 0
+      },
+      {
+        "name": "Twin Swords",
+        "position": "Aérien Neutre",
+        "description": "Combo aérien de faible portée où le dernier coup éjecte l'adversaire. Pratique pour monter rapidement son niveau d'Âme de Chaos.",
+        "command": "X>X",
+        "video": 0
+      },
+      {
+        "name": "Chain Cast",
+        "position": "Aérien Avant",
+        "description": "Attaque verticale de portée moyenne qui éjecte l'adversaire. Pratique contre les adversaires esquivant en sautant ou approchant.",
+        "command": "Haut+X>X",
+        "video": 0
+      },
+      {
+        "name": "Flare",
+        "position": "Aérien Arrière",
+        "description": ["Projectile en ligne droite de portée moyenne.",
+          "L'Âme de Chaos augmente la taille du projectile ainsi que sa portée."
+        ],
+        "command": "Bas+X",
+        "video": 0
+      },
+      {
+        "name": "Twist Drill",
+        "position": "Attaque Dash",
+        "description": "Attaque Dash en ligne droite éjectant l'adversaire. Maintenir les boutons étend la durée de l'attaque.",
+        "command": "Dash+X",
+        "video": 0
+      }
+    ]
+  }],
+  "hp": [{
+    "stance": false,
+    "moves": [{
+        "name": "Earthquake",
+        "position": "Sol/Air",
+        "description": "Attaque de faible portée de type plongeante. Plus l'attaque commence haut dans les airs, plus les dégâts sont hauts.",
+        "command": "Square",
+        "video": 0
+      },
+      {
+        "name": "Tsunami",
+        "position": "Sol/Air",
+        "description": "Attaque de longue portée de type vague avec une forte valeur verticale.",
+        "command": "Square",
+        "video": 0
+      },
+      {
+        "name": "Blaze",
+        "position": "Sol/Air",
+        "description": "Attaque de courte portée de zone à 360° autour de Garland infligeant des dégâts de Bravoure avant le coup P et disposant de la propriété Super Armor.",
+        "command": "Square",
+        "video": 0
+      },
+      {
+        "name": "Cyclone",
+        "position": "Sol/Air",
+        "description": "Projectile très rapide de longue portée.",
+        "command": "Square",
+        "video": 0
+      }
+    ]
+  }],
+  "ex": [{
+    "stance": false,
+    "moves": [{
+      "name": "Âme de Chaos",
+      "position": "Sol/Air",
+      "description": ["Choppe de portée moyenne infligeant des dégâts de Bravoure à l'adversaire. Maintenir le bouton étend la durée.",
+        "Augmente le niveau de l'étât d'Âme de Chaos de Garland."
+      ],
+      "command": "Triangle",
+      "cooldown": 60,
+      "video": 0
+    }]
+  }]
+}

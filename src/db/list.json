@@ -1,0 +1,222 @@
+{
+	"guerrier_de_la_lumiere": {
+		"name": "Guerrier de la Lumière",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"garland": {
+		"name": "Garland",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"firion": {
+		"name": "Firion",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"empereur": {
+		"name": "L'Empereur",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"chevalier_oignon": {
+		"name": "Chevalier Oignon",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"nuage_de_tenebres": {
+		"name": "Nuage de Ténèbres",
+		"costume": 1,
+		"color": [3],
+		"weapon": 2,
+		"description": null,
+		"movelist": []
+	},
+	"cecil": {
+		"name": "Cecil Harvey",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3
+	},
+	"kain": {
+		"name": "Kain Highwind",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"golbez": {
+		"name": "Golbez",
+		"costume": 1,
+		"color": [1],
+		"weapon": 1,
+		"description": null,
+		"movelist": []
+	},
+	"bartz": {
+		"name": "Bartz Klauser",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"exdeath": {
+		"name": "Exdeath",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"terra": {
+		"name": "Terra Branford",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"kefka": {
+		"name": "Kefka Palazzo",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"cloud": {
+		"name": "Cloud Strife",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 4
+	},
+	"sephiroth": {
+		"name": "Sephiroth",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"squall": {
+		"name": "Squall Leonhart",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"ultimecia": {
+		"name": "Ultimecia",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"djidane": {
+		"name": "Djidane Tribal",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"kuja": {
+		"name": "Kuja",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"tidus": {
+		"name": "Tidus",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"jecht": {
+		"name": "Jecht",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"shantotto": {
+		"name": "Shantotto",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"vaan": {
+		"name": "Vaan",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"lightning": {
+		"name": "Lightning",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 4,
+		"description": null,
+		"movelist": []
+	},
+	"yshtola": {
+		"name": "Y\"shtola",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 4,
+		"description": null,
+		"movelist": []
+	},
+	"noctis": {
+		"name": "Noctis Lucis Caelum",
+		"costume": 0,
+		"color": [1],
+		"weapon": 1,
+		"description": null,
+		"movelist": []
+	},
+	"ramza": {
+		"name": "Ramza Beoulve",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	},
+	"ace": {
+		"name": "Ace",
+		"costume": 2,
+		"color": [3, 1],
+		"weapon": 3,
+		"description": null,
+		"movelist": []
+	}
+}

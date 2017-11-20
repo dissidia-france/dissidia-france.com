@@ -1,0 +1,210 @@
+{
+    "sp": [{
+        "name": "Deck de cartes",
+        "description": "La spécificité unique de Ace est son tirage de cartes et la possibilité d'utiliser différents effets en fonction des cartes tirées."
+    }],
+    "brv": [{
+        "stance": false,
+        "moves": [{
+                "name": "Flourish",
+                "position": "Sol/Air Neutre",
+                "description": "Combo de lancer de cartes à portée moyenne. Ace lance 3 puis 3 puis 3 puis 5 cartes.",
+                "command": "X>X>X>X",
+                "video": 0
+            },
+            {
+                "name": "Cannonball",
+                "position": "Sol Avant",
+                "description": "Projectile rapide en ligne droite à longue distance.",
+                "command": "Haut+X",
+                "video": 0
+            },
+            {
+                "name": "Spiral",
+                "position": "Sol Arrière",
+                "description": "Piège de faible portée laissant une colonne de cartes pendant environ 6 secondes.",
+                "command": "Bas+X",
+                "video": 0
+            },
+            {
+                "name": "Jackpot Shot",
+                "position": "Aérien Avant",
+                "description": "Quatre projectiles avec une longue portée. Les lasers suivent légèrement les déplacements de l'adversaire ciblé.",
+                "command": "Haut+X",
+                "video": 0
+            },
+            {
+                "name": "Chase",
+                "position": "Aérien Arrière",
+                "description": "Projectile assez lent mais qui suit l'adversaire ciblé sur une assez longue portée et durée. Il est possible d'en avoir deux en même temps.",
+                "command": "Bas+X",
+                "video": 0
+            },
+            {
+                "name": "Wild Card",
+                "position": "Attaque Dash",
+                "description": "Attaque à moyenne portée qui permet à Ace de se téléporter sur la cible si la première attaque touche et de l'éjecter ensuite.",
+                "command": "Dash+X",
+                "video": 0
+            }
+        ]
+    }],
+    "hp": [{
+        "stance": false,
+        "moves": [{
+                "name": "Fire RF",
+                "position": "Sol/Air",
+                "description": "Projectile en ligne droite à longue portée. Charger l'attaque augmente encore la portée.",
+                "command": "Square",
+                "video": 0
+            },
+            {
+                "name": "Blizzard BOM",
+                "position": "Sol/Air",
+                "description": "Attaque de type explosion autour du personnage. Charger l'attaque augmente la portée de l'explosion.",
+                "command": "Square",
+                "video": 0
+            },
+            {
+                "name": "Thunder SHG",
+                "position": "Sol/Air",
+                "description": "Attaque rapide de type cône. Charger l'attaque augmente la portée.",
+                "command": "Square",
+                "video": 0
+            },
+            {
+                "name": "Tower Laser",
+                "position": "Sol/Air",
+                "description": "Attaque de type colonne à longue distance. Suit légèrement l'adversaire et peut toucher plusieurs ennemis.",
+                "command": "Square",
+                "video": 0
+            }
+        ]
+    }],
+    "ex": [{
+            "stance": false,
+            "moves": [{
+                    "name": "Cut Card",
+                    "position": "Sol/Air",
+                    "description": ["Ace tire une carte de son deck parmi quatre différentes cartes et celle-ci apparait au dessus de lui.",
+                        "S'il en tire une cinquième, la première est remplacée."
+                    ],
+                    "command": "Triangle",
+                    "cooldown": 10,
+                    "video": 0
+                },
+                {
+                    "name": "Using Card",
+                    "position": "Sol/Air",
+                    "description": ["Ace utilise une compétence en fonction des cartes qu'il a tiré et placé au dessus de lui.",
+                        "L'effet utilisé dépend de la couleur dominante des cartes tirées.",
+                        "Plus il y a de cartes de la même couleur dans la pile, plus l'effet sera puissant.",
+                        "Ace peut utiliser ses cartes empilées même si sa compétence EX est en recharge."
+                    ],
+                    "command": "Maintenir Triangle",
+                    "video": 0
+                }
+            ]
+        },
+        {
+            "stance": "Cartes Rouges",
+            "moves": [{
+                    "name": "Burst",
+                    "position": "Sol/Air",
+                    "description": "Projectile rapide de portée moyenne éjectant l'adversaire infligeant 336 dégâts de Bravoure.",
+                    "command": "Maintenir Triangle avec une carte rouge",
+                    "video": 0
+                }, {
+                    "name": "Hi Burst",
+                    "position": "Sol/Air",
+                    "description": "Projectile rapide de portée moyenne éjectant l'adversaire infligeant 480 dégâts de Bravoure.",
+                    "command": "Maintenir Triangle avec deux cartes rouges",
+                    "video": 0
+                },
+                {
+                    "name": "Mega Burst",
+                    "position": "Sol/Air",
+                    "description": "Projectile rapide à longue portée éjectant l'adversaire infligeant 784 dégâts de Bravoure en zone.",
+                    "command": "Maintenir Triangle avec trois cartes rouges",
+                    "video": 0
+
+                }
+            ]
+        },
+        {
+            "stance": "Cartes Noires",
+            "moves": [{
+                    "name": "Stop",
+                    "position": "Sol/Air",
+                    "description": "Projectile rapide de portée moyenne immobilisant l'adversaire ciblé pendant 2 secondes.",
+                    "command": "Maintenir Triangle avec une carte noire",
+                    "video": 0
+                }, {
+                    "name": "Long Stop",
+                    "position": "Sol/Air",
+                    "description": "Projectile rapide de portée moyenne immobilisant l'adversaire ciblé pendant 3 secondes.",
+                    "command": "Maintenir Triangle avec deux cartes noires",
+                    "video": 0
+                },
+                {
+                    "name": "Mega Stop",
+                    "position": "Sol/Air",
+                    "description": "Zone à longue portée immobilisant les adversaires presents autour pendant 5 secondes.",
+                    "command": "Maintenir Triangle avec trois cartes noires",
+                    "video": 0
+
+                }
+            ]
+        },
+        {
+            "stance": "Cartes Bleues",
+            "moves": [{
+                    "name": "Charge",
+                    "position": "Sol/Air",
+                    "description": "Redonne 200 points de Bravoure et points de Vie à Ace et à ses coéquipiers proches.",
+                    "command": "Maintenir Triangle avec une carte bleue",
+                    "video": 0
+                }, {
+                    "name": "Hi Charge",
+                    "position": "Sol/Air",
+                    "description": "PRedonne 500 points de Bravoure et points de Vie à Ace et à ses coéquipiers proches.",
+                    "command": "Maintenir Triangle avec deux cartes bleues",
+                    "video": 0
+                },
+                {
+                    "name": "Mega Charge",
+                    "position": "Sol/Air",
+                    "description": "Redonne 1000 points de Bravoure et points de Vie à Ace et à ses coéquipiers proches.",
+                    "command": "Maintenir Triangle avec trois cartes bleues",
+                    "video": 0
+
+                }
+            ]
+        },
+        {
+            "stance": "Cartes Jaunes",
+            "moves": [{
+                    "name": "Force",
+                    "position": "Sol/Air",
+                    "description": "Augmente l'attaque et la défense de 10%, la vitesse de 2% de Ace et de ses coéquipiers proches pendant 10 secondes.",
+                    "command": "Maintenir Triangle avec une carte jaune",
+                    "video": 0
+                }, {
+                    "name": "Hi Force",
+                    "position": "Sol/Air",
+                    "description": "Augmente l'attaque et la défense de 20%, la vitesse de 7,5% de Ace et de ses coéquipiers proches pendant 15 secondes.",
+                    "command": "Maintenir Triangle avec deux cartes jaunes",
+                    "video": 0
+                },
+                {
+                    "name": "Mega Force",
+                    "position": "Sol/Air",
+                    "description": "Augmente l'attaque et la défense de 70%, la vitesse de 17% de Ace et de ses coéquipiers proches pendant 20 secondes.",
+                    "command": "Maintenir Triangle avec trois cartes jaunes",
+                    "video": 0
+
+                }
+            ]
+        }
+    ]
+}

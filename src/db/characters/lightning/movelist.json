@@ -1,0 +1,126 @@
+{
+  "sp": [{
+    "name": "Paradigm",
+    "description": "Change de rôle entre Attaquant et Ravageur en appuyant sur L3"
+  }],
+  "brv": [{
+    "stance": "Attaquant",
+    "moves": [{
+        "name": "Launch",
+        "position": "Sol Neutre",
+        "description": "Combo rapide au sol éjectant l’adversaire dans les airs.",
+        "command": "X>X>X",
+        "video": 0
+      },
+      {
+        "name": "Blitz",
+        "position": "Sol Avant",
+        "description": "Rapprochement rapide avec une attaque tournoyante suivie d’un coup final éjectant l’adversaire.",
+        "command": "Haut+X>X",
+        "video": 0
+      },
+      {
+        "name": "Smite",
+        "position": "Aérien Neutre",
+        "description": "Combo aérien rapide éjectant l’adversaire avec remise au sol.",
+        "command": "X>X>X",
+        "video": 0
+      },
+      {
+        "name": "Heavy Slash",
+        "position": "Aérien Avant",
+        "description": "Combo aérien de mi-distance éjectant l’adversaire.",
+        "command": "Haut+X>X",
+        "video": 0
+      },
+      {
+        "name": "Beat Down",
+        "position": "Attaque Dash",
+        "description": "Coup simple mi-distance pouvant servir d’ouverture de combo et disposant d’une propriété Super Armor.",
+        "command": "Dash+X",
+        "video": 0
+      }
+    ]
+  }, {
+    "stance": "Ravageur",
+    "moves": [{
+        "name": "Fire",
+        "position": "Sol Neutre",
+        "description": "Trois projectiles de feu se déplaçant une seconde après leur invocation.",
+        "command": "X>X>X",
+        "video": 0
+      },
+      {
+        "name": "Watera",
+        "position": "Sol Avant",
+        "description": "Projectile lent qui suit sa cible. Très utile dans un jeu de zoning couplé à la compétence Fire.",
+        "command": "Haut+X",
+        "video": 0
+      },
+      {
+        "name": "Aerora",
+        "position": "Aérien Neutre",
+        "description": "Projectile relativement rapide qui suit sa cible.",
+        "command": "X",
+        "video": 0
+      },
+      {
+        "name": "Blizzara",
+        "position": "Aérien Avant",
+        "description": "Magie longue distance de zone avec effet d’aspiration. Lancement très rapide pour surprendre un ennemi.",
+        "command": "Haut+X",
+        "video": 0
+      },
+      {
+        "name": "Thundaga",
+        "position": "Attaque Dash",
+        "description": "Vague rapide et pratique pour aller toucher à mi-distance.",
+        "command": "Dash+X",
+        "video": 0
+      }
+    ]
+  }],
+  "hp": [{
+    "stance": false,
+    "moves": [{
+        "name": "Crushing Blow",
+        "position": "Sol/Air",
+        "description": "Attaque de courte portée en ligne droite, très bon combo finisher.",
+        "command": "Square",
+        "video": 0
+      },
+      {
+        "name": "Razor Gale",
+        "position": "Sol/Air",
+        "description": "Large projectile de faible vitesse suivant sa cible et restant à l’écran 4 secondes.",
+        "command": "Square",
+        "video": 0
+      },
+      {
+        "name": "Lightning Strike",
+        "position": "Sol/Air",
+        "description": "Attaque de courte portée infligeant quelques dégâts de Bravoure de zone avant le coup HP.",
+        "command": "Square",
+        "video": 0
+      },
+      {
+        "name": "Thunderfall",
+        "position": "Sol/Air",
+        "description": "AOE verticale à longue distance. Lightning peut se déplacer en planant pendant l’exécution. ",
+        "command": "Square",
+        "video": 0
+      }
+    ]
+  }],
+  "ex": [{
+    "stance": false,
+    "moves": [{
+      "name": "Army of One",
+      "position": "Sol/Air",
+      "description": "Combo rapide de 10 coups soignant Lightning à chaque coup placé.",
+      "command": "Triangle",
+      "cooldown": 60,
+      "video": 0
+    }]
+  }]
+}

@@ -1,0 +1,102 @@
+{
+  "sp": [{
+    "name": "Protecteur",
+    "description": "Seul personnage à avoir un rôle de protecteur avec des compétences permettant de forcer l'ennemi à l'attaquer"
+  }],
+  "brv": [{
+    "stance": false,
+    "moves": [{
+        "name": "Ascension",
+        "position": "Sol Neutre",
+        "description": "Combo rapide au sol éjectant l’adversaire au loin.",
+        "command": "X>X>X",
+        "video": 0
+      },
+      {
+        "name": "Sword Trust",
+        "position": "Sol Avant",
+        "description": "Rapprochement rapide avec la première attaque et qui éjecte l'adversaire au loin. Le premier coup dispose d'une propriété Super Armor",
+        "command": "Haut+X>X",
+        "video": 0
+      },
+      {
+        "name": "Shield of Light - Radiant Blade",
+        "position": "Sol Arrière",
+        "description": ["Le premier coup fait apparaitre un bouclier de lumière pouvant bloquer toute attaque de Bravoure, le deuxième fait apparaitre une lame de lumière sortant du bouclier.", "La compétence possède trois niveau, chaque niveaux augmentant le nombre de boucliers de lumière apparaissant.", "Il est nécessaire de bloquer avec succès une attaque pour faire évoluer la compétence au niveau suivant."],
+        "command": "Bas+X>X",
+        "video": 0
+      },
+      {
+        "name": "Crossover",
+        "position": "Aérien Neutre",
+        "description": "Combo aérien de faible distance éjectant l’adversaire.",
+        "command": "X>X",
+        "video": 0
+      },
+      {
+        "name": "Shield Strike",
+        "position": "Aérien Avant",
+        "description": "Coup aérien de mi-distance éjectant l'adversaire du coté opposé. Le premier coup dispose d'une propriété Super Armor.",
+        "command": "Haut+X>X",
+        "video": 0
+      },
+      {
+        "name": "Shield of Light - Radiant Sword",
+        "position": "Aérien Arrière",
+        "description": ["Le premier coup fait apparaitre un bouclier de lumière pouvant bloquer toute attaque de Bravoure, le deuxième fait apparaitre un projectile en forme d'épée de lumière sortant du bouclier.", "La compétence possède trois niveau, chaque niveaux augmentant le nombre de boucliers de lumière apparaissant.", "Il est nécessaire de bloquer avec succès une attaque pour faire évoluer la compétence au niveau suivant."],
+        "command": "Haut+X>X",
+        "video": 0
+      },
+      {
+        "name": "Guard Slash",
+        "position": "Attaque Dash",
+        "description": "Coup d'épée en dash effectué tout en se protegeant et bloquant les attaques ennemies.",
+        "command": "Dash+X",
+        "video": 0
+      }
+    ]
+  }],
+  "hp": [{
+    "stance": false,
+    "moves": [{
+        "name": "Shining Wave",
+        "position": "Sol/Air",
+        "description": "Attaque de longue portée en ligne droite de type vague avec une forte valeur verticale.",
+        "command": "Square",
+        "video": 0
+      },
+      {
+        "name": "Bright Saber",
+        "position": "Sol/Air",
+        "description": "Attaque horizontale de portée moyenne. Peut toucher plusieurs adversaires.",
+        "command": "Square",
+        "video": 0
+      },
+      {
+        "name": "All End",
+        "position": "Sol/Air",
+        "description": "Attaque de courte portée de type perçante bloquant les attaques ennemies.",
+        "command": "Square",
+        "video": 0
+      },
+      {
+        "name": "Ultimate Shield",
+        "position": "Sol/Air",
+        "description": "Attaque de courte portée infligeant des dégâts de Bravoure avant le coup PV et disposant de la propriété Super Armor.",
+        "command": "Square",
+        "video": 0
+      }
+    ]
+  }],
+  "ex": [{
+    "stance": false,
+    "moves": [{
+      "name": "Holy Chain",
+      "position": "Sol/Air",
+      "description": "Force les ennemis dans la zone d'effet à cibler le Guerrier de la Lumière pendant 15 secondes.",
+      "command": "Triangle",
+      "cooldown": 85,
+      "video": 0
+    }]
+  }]
+}
