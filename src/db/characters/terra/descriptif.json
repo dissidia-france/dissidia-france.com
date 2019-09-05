@@ -1,0 +1,15 @@
+{
+  "fullName": "Terra Branford",
+  "age": 18,
+  "role": "Tireur",
+  "series": "Final Fantasy VI",
+  "va": {
+    "jp": "Yukari Fukui",
+    "en": "Natalie Lander"
+  },
+  "video": "https://www.youtube.com/embed/V6fR77mqEXw?iv_load_policy=3",
+  "sp": [{
+    "name": "Canalisation Magique",
+    "description": "Sa capacité à canaliser sa magie permet à Terra de faire évoluer chacune de ses attaques de Bravoure pour plus de puissance et des propriétés différentes"
+  }]
+ }

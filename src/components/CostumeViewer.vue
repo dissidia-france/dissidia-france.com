@@ -6,9 +6,9 @@
       <div class="chara-image-border"></div>
     </div>
     <span class="swap-buttons">
-      <button @click="swapOutfit('color')">Couleurs ({{ character.color }})</button>
-      <button @click="swapOutfit('costume')">Costumes ({{ character.costume }})</button>
-      <button @click="swapOutfit('weapon')">Armes ({{ character.weapon }})</button>
+      <button class="costume" @click="swapOutfit('costume')"></button>
+      <button class="color" @click="swapOutfit('color')"></button>
+      <button class="weapon" @click="swapOutfit('weapon')"></button>
     </span>
   </div>
 </template>
@@ -43,6 +43,7 @@ export default {
     },
     swapOutfit: function (typeClicked) {
       // Consolidate these ifs into one single map function if possible.
+      // Add costume names and weapon names, as well as change color types to A, B and C.
       if (typeClicked === 'costume' && this.selected.data.costume > 1) {
         this.character.costume++
         this.character.color = 1
@@ -86,7 +87,7 @@ export default {
           for (let o = 1; o <= colors[c - 1]; o++) {
             let keyName = this.selected.name + c + o + w
             let imageName = 'p_' + c + o + w
-            let render = [keyName, require('../assets/characters/' + this.selected.name + '/' + imageName + '.png')]
+            let render = [keyName, require('../assets/characters/' + this.selected.name + '/forms/' + imageName + '.png')]
             renders.push(render)
           }
         }
@@ -111,11 +112,15 @@ export default {
 </script>
 
 <style scoped>
+.chara-costume {
+  margin-top: 30px;
+}
+
 .chara-name {
   padding: 10px;
   margin: 0;
   color: #ccd6dd;
-  font-family: Verdana, Arial, sans-serif;
+  font-family: 'DissidiaFont', Verdana, sans-serif;
 }
 
 .chara-image {
@@ -138,10 +143,16 @@ export default {
 }
 
 .swap-buttons {
-  padding: 10px;
+  padding: 20px;
   margin: 0;
+  margin-top: 5px;
   display: block;
   /*background: #272727;*/
+  background-image: url('../assets/buttons/button_bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 85%;
+  font-size: 0;
 }
 
 .swap-buttons p {
@@ -150,13 +161,66 @@ export default {
 }
 
 .swap-buttons button {
-  margin: 5px auto;
+  margin: 0 auto;
+  height: calc(58px * 0.85);
   display: inline-block;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.swap-buttons button.costume {
+  background-image: url('../assets/buttons/costume.png');
+  background-repeat: no-repeat;
+  width: calc(157px * 0.85);
+  background-position: center center;
+  background-size: contain;
+}
+
+.swap-buttons button.color {
+  background-image: url('../assets/buttons/couleur.png');
+  background-repeat: no-repeat;
+  width: calc(145px * 0.85);
+  background-position: center center;
+  background-size: contain;
+}
+
+.swap-buttons button.weapon {
+  background-image: url('../assets/buttons/arme.png');
+  background-repeat: no-repeat;
+  width: calc(157px * 0.85);
+  background-position: center center;
+  background-size: contain;
+}
+
+.swap-buttons button.costume:hover {
+  background-image: url('../assets/buttons/costume_hover.png');
+}
+
+.swap-buttons button.color:hover {
+  background-image: url('../assets/buttons/couleur_hover.png');
+}
+
+.swap-buttons button.weapon:hover {
+  background-image: url('../assets/buttons/arme_hover.png');
+}
+
+.swap-buttons button.costume:active {
+  background-image: url('../assets/buttons/costume_on.png');
+}
+
+.swap-buttons button.color:active {
+  background-image: url('../assets/buttons/couleur_on.png');
+}
+
+.swap-buttons button.weapon:active {
+  background-image: url('../assets/buttons/arme_on.png');
 }
 
 .chara-image-wrapper {
   width: 440px;
   margin: 0 auto;
+  margin-top: 30px;
   height: 440px;
   background-image: url('../assets/clouds.jpg');
   background-position: bottom center;
@@ -173,34 +237,146 @@ export default {
 
 @media screen and (max-width: 1000px) and (orientation: landscape) {
 
+  .chara-costume {
+    margin-top: 0;
+  }
+
   .chara-image-wrapper {
     width: calc(440px * 0.95);
-    margin: 0 auto;
     height: calc(440px * 0.95);
-    background-image: url('../assets/clouds.jpg');
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    margin-top: 0;
   }
 
   .chara-image {
-    margin: 0;
     width: calc(440px * 0.95);
     height: calc(440px * 0.95);
-    display: block;
-    /*border: solid 1px #3c3c3c;
-    background: #272727;*/
-    padding: 0;
+  }
+
+  .swap-buttons button {
+    font-size: 0.7em;
+    width: 30%;
   }
 
   .chara-image-border {
-    position: relative;
-    background-image: url('../assets/characters/frame.png');
     background-size: cover;
     width: calc(469px * 0.95);
     height: calc(469px * 0.95);
     margin-left: calc(-13px * 0.95); 
     margin-top: calc(-456px * 0.95);
+  }
+}
+
+
+@media screen and (max-width: 850px) and (orientation: landscape) {
+
+  .chara-costume {
+    width: calc(470px * 0.65);
+    height: 100%;
+  }
+
+  .chara-image-wrapper {
+    width: calc(440px * 0.65);
+    height: calc(440px * 0.65);
+  }
+
+  .chara-image {
+    width: calc(440px * 0.65);
+    height: calc(440px * 0.65);
+  }
+
+  .swap-buttons {
+    margin: 0 auto;
+    margin-top: -10px;
+    width: calc(85px + 85px + 75px);
+  }
+
+  .swap-buttons, .swap-buttons button {
+    height: 30px;
+  }
+
+  .swap-buttons button.costume, .swap-buttons button.weapon {
+    width: 85px;
+  }
+
+  .swap-buttons button.color {
+    width: 75px;
+  }
+
+  .chara-image-border {
+    background-size: cover;
+    width: calc(469px * 0.65);
+    height: calc(469px * 0.65);
+    margin-left: calc(-13px * 0.65); 
+    margin-top: calc(-456px * 0.65);
+  }
+}
+
+@media screen and (max-width: 670px) and (orientation: landscape) {
+
+  .chara-costume {
+    width: calc(470px * 0.6);
+  }
+
+  .chara-image-wrapper {
+    width: calc(440px * 0.6);
+    height: calc(440px * 0.6);
+  }
+
+  .chara-image {
+    width: calc(440px * 0.6);
+    height: calc(440px * 0.6);
+  }
+
+  .chara-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  .swap-buttons button {
+    font-size: 0.7em;
+    width: 30%;
+  }
+
+  .chara-image-border {
+    background-size: cover;
+    width: calc(469px * 0.6);
+    height: calc(469px * 0.6);
+    margin-left: calc(-13px * 0.6); 
+    margin-top: calc(-456px * 0.6);
+  }
+}
+
+@media screen and (max-width: 580px) and (orientation: landscape) {
+
+  .chara-costume {
+    width: calc(470px * 0.5);
+  }
+
+  .chara-image-wrapper {
+    width: calc(440px * 0.5);
+    height: calc(440px * 0.5);
+  }
+
+  .chara-image {
+    width: calc(440px * 0.5);
+    height: calc(440px * 0.5);
+  }
+
+  .chara-name {
+    font-size: 0.9em;
+  }
+
+  .swap-buttons button {
+    font-size: 0.5em;
+    width: 30%;
+  }
+
+  .chara-image-border {
+    background-size: cover;
+    width: calc(469px * 0.5);
+    height: calc(469px * 0.5);
+    margin-left: calc(-13px * 0.5); 
+    margin-top: calc(-456px * 0.5);
   }
 }
 
@@ -245,13 +421,19 @@ export default {
   }
 
   .chara-name {
-    font-size: 45px;
+    font-size: 1.5em;
     padding: 10px 0;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+  }
+
+  .swap-buttons {
+    background: none;
   }
 
   .swap-buttons button {
-    font-size: 25px;
+    font-size: 0.8em;
+    width: 30%;
+    max-width: 150px;
     padding: 0.4em 0.7em;
     margin: 15px auto;
     display: inline-block;

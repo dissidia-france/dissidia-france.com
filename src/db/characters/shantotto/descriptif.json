@@ -1,0 +1,15 @@
+{
+  "fullName": "Shantotto",
+  "age": "Tous ceux qui l'ont un jour su sont morts",
+  "role": "Tireur",
+  "series": "Final Fantasy XI",
+  "va": {
+    "jp": "Megumi Hayashibara",
+    "en": "Candi Milo"
+  },
+  "video": "https://www.youtube.com/embed/2oVAGsOpQKI?iv_load_policy=3",
+  "sp": [{
+    "name": "Mode Enragée",
+    "description": "Lorsqu’elle passe sous les 2500 PV, Shantotto deviens enragée et la totalité de ses attaques de Bravoure changent de propriétés pour un style plus dynamique"
+  }]
+ }

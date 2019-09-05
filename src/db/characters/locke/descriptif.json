@@ -1,0 +1,15 @@
+{
+  "fullName": "Locke Cole",
+  "age": 25,
+  "role": "Assassin",
+  "series": "Final Fantasy VI",
+  "va": {
+    "jp": "Yûki Ono",
+    "en": "Jonathan von Mering"
+  },
+  "video": "https://www.youtube.com/embed/vOT63C6katY?iv_load_policy=3",
+  "sp": [{
+    "name": "Attaque Surprise",
+    "description": "Locke infligera plus de dégâts à son adversaire si ce dernier ne le cible pas en retour. L’utilité de cette spécificité est renforcée avec sa compétence EX « Vol »"
+  }]
+}

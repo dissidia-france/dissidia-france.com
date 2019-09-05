@@ -1,0 +1,15 @@
+﻿{
+  "fullName": "L'Empereur",
+  "age": "Inconnu",
+  "role": "Tireur",
+  "series": "Final Fantasy II",
+  "va": {
+    "jp": "Ken'yû Horiuchi",
+    "en": "Christopher Corey Smith"
+  },
+  "video": "https://www.youtube.com/embed/ZpA95BqC8Js?iv_load_policy=3",
+  "sp": [{
+    "name": "Maestro des Pièges",
+    "description": "La quasi-totalité des attaques de l’Empereur sont des pièges qui perdurent et lui permettent d’exercer un contrôle immense de l’environnement de combat"
+  }]
+}

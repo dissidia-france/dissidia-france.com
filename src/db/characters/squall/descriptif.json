@@ -1,0 +1,15 @@
+{
+  "fullName": "Squall Leonhart",
+  "age": 17,
+  "role": "Assassin",
+  "series": "Final Fantasy VIII",
+  "va": {
+    "jp": "Hideo Ishikawa",
+    "en": "Doug Erholtz"
+  },
+  "video": "https://www.youtube.com/embed/N3z6ZvcB2Ao?iv_load_policy=3",
+  "sp": [{
+    "name": "Gâchette Explosive",
+    "description": "Tous les coups donnés à la Gunblade peuvent être renforcés et infliger  plus de dégâts si Squall appuie sur la gâchette de son arme avec un timing très précis"
+  }]
+ }

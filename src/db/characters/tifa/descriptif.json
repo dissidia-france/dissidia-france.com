@@ -1,0 +1,15 @@
+{
+  "fullName": "Tifa Lockhart",
+  "age": "20",
+  "role": "Assassin",
+  "series": "Final Fantasy VII",
+  "va": {
+    "jp": "Ayumi Ito",
+    "en": "Rachael Leigh Cook"
+  },
+  "video": "https://www.youtube.com/embed/vCiuYepn_mc?iv_load_policy=3&autoplay=1",
+  "sp": [{
+    "name": "Fièvre du Combat",
+    "description": "L’état Fièvre du combat augmente les dégâts des attaques de Bravoure de Tifa<br>Le niveau de cet état augmente en attaquant de façon répétée ses ennemis"
+  }]
+ }

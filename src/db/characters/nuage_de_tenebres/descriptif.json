@@ -1,0 +1,15 @@
+{
+  "fullName": "Nuage de Ténèbres",
+  "age": "Inconnu",
+  "role": "Combattant",
+  "series": "Final Fantasy III",
+  "va": {
+    "jp": "Masako Ikeda",
+    "en": "Laura Bailey"
+  },
+  "video": "https://www.youtube.com/embed/B5mQy_QsYkU?iv_load_policy=3",
+  "sp": [{
+    "name": "Flot de Ténèbres",
+    "description": "Le flot de ténèbres obtenu au bout de dix secondes permet au personnage d’utiliser à tout moment une attaque de Bravoure plus longue et plus puissante"
+  }]
+ }

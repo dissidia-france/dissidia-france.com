@@ -1,0 +1,15 @@
+{
+  "fullName": "Linoa Heartilly",
+  "age": 17,
+  "role": "Tireur",
+  "series": "Final Fantasy VIII",
+  "va": {
+    "jp": "Kana Hanazawa",
+    "en": "Skyler Davenport"
+  },
+  "video": "https://www.youtube.com/embed/wh1SrpCIIVI?iv_load_policy=3",
+  "sp": [{
+    "name": "Combinaison & Canonisation",
+    "description": "Linoa dispose de deux styles de combat, l’un exploitant son arme et Angelo et l’autre utilisant toute la puissance de sa magie de sorcière mais à quel prix ?"
+  }]
+}

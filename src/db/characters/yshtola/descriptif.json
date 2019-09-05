@@ -1,0 +1,15 @@
+{
+  "fullName": "Y'shtola Rhul",
+  "age": 23,
+  "role": "Tireur",
+  "series": "Final Fantasy XIV",
+  "va": {
+    "jp": "Ai Kayano",
+    "en": "Robyn Addison"
+  },
+  "video": "https://www.youtube.com/embed/FqU5nS1OFn8?iv_load_policy=3",
+  "sp": [{
+    "name": "Afflictions du Septième Fléau",
+    "description": "Y’shtola peut avec la plupart de ses attaques de Bravoure, piéger ses adversaires et leur infliger de multiples et diverses altérations d’état négatives "
+  }]
+ }

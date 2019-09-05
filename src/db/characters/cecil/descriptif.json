@@ -1,0 +1,15 @@
+{
+  "fullName": "Cecil Harvey",
+  "age": 20,
+  "role": "Combattant",
+  "series": "Final Fantasy IV",
+  "va": {
+    "jp": "Shizuma Hodoshima",
+    "en": "Yuri Lowenthal"
+  },
+  "video": "https://www.youtube.com/embed/TgB3S6GcLws?iv_load_policy=3",
+  "sp": [{
+    "name": "Dualité Ombre et Lumière",
+    "description": "En acceptant les ténèbres qui sont en lui ou en accueillant la lumière Cecil dispose de deux styles de combat lui permettant de s’adapter à son adversaire"
+  }]
+ }

@@ -1,0 +1,15 @@
+{
+  "fullName": "Bartz Klauser",
+  "age": 20,
+  "role": "Spécialiste",
+  "series": "Final Fantasy V",
+  "va": {
+    "jp": "Sôichirô Hoshi",
+    "en": "Jason Spisak"
+  },
+  "video": "https://www.youtube.com/embed/-CR6FtrZvp8?iv_load_policy=3",
+  "sp": [{
+    "name": "Freelance",
+    "description": "En tant que Freelance, Bartz peut utiliser des techniques d’autres Jobs<br>Ces techniques peuvent être maîtrisées pour amplifier leurs effets et atouts"
+  }]
+ }

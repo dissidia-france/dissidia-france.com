@@ -1,0 +1,15 @@
+{
+  "fullName": "Golbez",
+  "age": 30,
+  "role": "Tireur",
+  "series": "Final Fantasy IV",
+  "va": {
+    "jp": "Takeshi Kaga",
+    "en": "Peter Beckman"
+  },
+  "video": "https://www.youtube.com/embed/YA3oljM0XsU?iv_load_policy=3",
+  "sp": [{
+    "name": "Mode Dragon Sombre",
+    "description": "Le dragon sombre qui accompagne Golbez permet de beaucoup renforcer les propriétés de ses attaques magiques mais attention, il n’est pas invulnérable"
+  }]
+ }

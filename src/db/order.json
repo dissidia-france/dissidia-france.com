@@ -14,25 +14,43 @@
 		"bartz",
 		"exdeath",
 		"terra",
-		"kefka",
-		"cloud"
+		"locke",
+		"kefka"
 	],
 	[
+		"cloud",
+		"tifa",
 		"sephiroth",
 		"squall",
+		"linoa",
 		"ultimecia",
-		"djidane",
-		"kuja",
-		"tidus",
-		"jecht"
+		"djidane"
 	],
 	[
+		"kuja",
+		"tidus",
+		"yuna",
+		"jecht",
 		"shantotto",
-		"vaan",
+		"kamlanaut",
+		"vaan"
+	],
+	[
+		"vayne",
 		"lightning",
+		"snow",
 		"yshtola",
+		"zenos",
 		"noctis",
-		"ramza",
-		"ace"
+		"ramza"
+	],
+	[
+		"ace",
+		null,
+		null,
+		null,
+		null,
+		null,
+		null
 	]
 ]

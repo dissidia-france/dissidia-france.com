@@ -1,0 +1,15 @@
+{
+  "fullName": "Vaan",
+  "age": 17,
+  "role": "Spécialiste",
+  "series": "Final Fantasy XII",
+  "va": {
+    "jp": "Kensho Ono",
+    "en": "Bobby Edner"
+  },
+  "video": "https://www.youtube.com/embed/WnxyvH2O_fk?iv_load_policy=3",
+  "sp": [{
+    "name": "Fusions d'Impulsions",
+    "description": "Les attaques de PV de Vaan peuvent évoluer pour infliger des dégâts supplémentaires sous la forme des fusions Luminescence puis Trou Noir"
+  }]
+ }

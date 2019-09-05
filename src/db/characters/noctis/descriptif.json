@@ -1,0 +1,15 @@
+{
+  "fullName": "Noctis Lucis Caelum",
+  "age": 20,
+  "role": "Assassin",
+  "series": "Final Fantasy XV",
+  "va": {
+    "jp": "Tatsuhisa Suzuki",
+    "en": "Ray Chase"
+  },
+  "video": "https://www.youtube.com/embed/AV3JdEq1iSI?iv_load_policy=3",
+  "sp": [{
+    "name": "Éclipse de Lucis",
+    "description": "Son aptitude EX lui permet de se téléporter grâce à l’éclipse en lançant son épée dans la direction désirée et ce jusqu’à trois fois en cas de jauge pleine"
+  }]
+ }

@@ -1,0 +1,15 @@
+{
+  "fullName": "Kefka Palazzo",
+  "age": 35,
+  "role": "Tireur",
+  "series": "Final Fantasy VI",
+  "va": {
+    "jp": "Shigeru Chiba",
+    "en": "Dave Wittenberg"
+  },
+  "video": "https://www.youtube.com/embed/8mcJKP5VRLU?iv_load_policy=3",
+  "sp": [{
+    "name": "Farces et Attrapes",
+    "description": "Sa capacité à charger ses sorts pour augmenter en modifier les trajectoires et propriétés tout en les retardant fait de Kefka un personnage difficile à anticiper"
+  }]
+ }

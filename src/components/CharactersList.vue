@@ -1,15 +1,17 @@
 <template>
-  <div class="page">
-    <div class="subheader">
-      <h2>Personnages</h2>
-    </div>
+  <div class="character-list">
+    <page-title titleValue="Personnages" />
+    <h2 class="subheader">Selectionnez un personnage</h2>
     <div class="crystals">
       <template v-for="(line, index) in charactersOrder">
         <ul :class="'line_' + index">
           <template v-for="(character, characterIndex) in line">
-            <li>
-              <div :class="animationsByOrder[index][characterIndex]" @click="selectCharacter(character)" 
+            <li v-if="character" :class="(character === 'inconnu' || !charactersData[character].released) ? 'unreleased' : false">
+              <div :class="(windowWidth > 1000) ? animationsByOrder[index][characterIndex] : false" @click="(character !== 'inconnu' && charactersData[character].released) ? selectCharacter(character) : false" 
               :style="{ backgroundImage: 'url(' + buildCrystal(character) + ')'}"></div>
+            </li>
+            <li v-else>
+              <div class="dummy"></div>
             </li>
           </template>
         </ul>
@@ -20,6 +22,7 @@
 </template>
 
 <script>
+import PageTitle from './shared/PageTitle'
 import CharacterViewer from './CharacterViewer'
 
 export default {
@@ -30,7 +33,8 @@ export default {
       charactersData: {},
       selectedCharacter: null,
       animationsByOrder: [],
-      showCharacterView: false
+      showCharacterView: false,
+      windowWidth: 0
     }
   },
   methods: {
@@ -76,16 +80,28 @@ export default {
       if (this.showCharacterView) {
         this.showCharacterView = false
       }
+    },
+    onResize: function (e) {
+      this.windowWidth = window.screen.width
     }
   },
   created () {
     this.setCharactersListData()
     this.animationsByOrder = this.randomAnim()
+    window.addEventListener('resize', this.onResize)
     document.addEventListener('keyup', this.closeCharacterViewOnEscape)
     window.addEventListener('popstate', this.closeCharacterViewOnBackKey)
     window.addEventListener('hashchange', this.closeCharacterViewOnStateChange)
+    if (this.$route.params.slug && Object.keys(this.charactersData).includes(this.$route.params.slug)) {
+      this.showCharacterView = true
+      this.selectedCharacter = this.$route.params.slug
+    }
   },
-  destroyed () {
+  mounted () {
+    this.windowWidth = window.screen.width
+  },
+  beforeDestroy () {
+    window.removeEventListener('resize', this.onResize)
     document.removeEventListener('keyup', this.closeCharacterViewOnEscape)
     window.removeEventListener('popstate', this.closeCharacterViewOnStateChange)
     window.removeEventListener('hashchange', this.closeCharacterViewOnStateChange)
@@ -98,10 +114,20 @@ export default {
       } else {
         document.body.classList.remove(className)
       }
+    },
+    windowWidth: function () {
+      this.animationsByOrder = this.randomAnim()
+    },
+    '$route.params.slug': function () {
+      if (this.$route.params.slug && Object.keys(this.charactersData).includes(this.$route.params.slug)) {
+        this.showCharacterView = true
+        this.selectedCharacter = this.$route.params.slug
+      }
     }
   },
   components: {
-    CharacterViewer
+    CharacterViewer,
+    PageTitle
   }
 }
 </script>
@@ -128,19 +154,31 @@ div.crystals li div {
   padding: 0;
   width: 113px;
   height: 236px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
   display: inline-block;
   cursor: pointer;
+  transition: .5s width, .5s height;
+  filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.5));
+  transform: translate3d(0,0,0);
+}
+div.crystals li.unreleased div {
+  cursor: not-allowed;
+}
+div.crystals li div.dummy {
+  cursor: default;
 }
 div.crystals li div:hover {
   background-position: -113px 0px;
 }
-ul.line_0, ul.line_2 {
+ul.line_0, ul.line_2, ul.line_4 {
   margin-left: 66.5px;
 }
 ul.line_1, ul.line_3 {
   margin-right: 66.5px;
 }
-ul.line_1, ul.line_2, ul.line_3 {
+ul.line_1, ul.line_2, ul.line_3, ul.line_4 {
   margin-top: -29px;
 }
 
@@ -386,25 +424,103 @@ ul.line_1, ul.line_2, ul.line_3 {
   100% {top:0px;}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 
   div.crystals li div {
-    width: 84.75px;
-    height: 177px;
-    background-size: cover;
+    width: calc(113px * 0.9);
+    height: calc(236px * 0.9);
   }
   div.crystals li div:hover {
-    background-position: -84.75px 0px;
+    background-position: calc(-113px * 0.9) 0px;
   }
-
-  ul.line_0, ul.line_2 {
-    margin-left: 49.875px;
+  ul.line_0, ul.line_2, ul.line_4 {
+    margin-left: calc(66.5px * 0.9);
   }
   ul.line_1, ul.line_3 {
-    margin-right: 49.875px;
+    margin-right: calc(66.5px * 0.9);
   }
-  ul.line_1, ul.line_2, ul.line_3 {
-    margin-top: -21.75px;
+  ul.line_1, ul.line_2, ul.line_3, ul.line_4 {
+    margin-top: calc(-29px * 0.9);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  
+  div.crystals li div {
+    width: calc(113px * 0.8);
+    height: calc(236px * 0.8);
+  }
+  div.crystals li div:hover {
+    background-position: calc(-113px * 0.8) 0px;
+  }
+  ul.line_0, ul.line_2, ul.line_4 {
+    margin-left: calc(66.5px * 0.8);
+  }
+  ul.line_1, ul.line_3 {
+    margin-right: calc(66.5px * 0.8);
+  }
+  ul.line_1, ul.line_2, ul.line_3, ul.line_4 {
+    margin-top: calc(-29px * 0.8);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  div.crystals li div {
+    width: calc(113px * 0.7);
+    height: calc(236px * 0.7);
+  }
+  div.crystals li div:hover {
+    background-position: calc(-113px * 0.7) 0px;
+  }
+  ul.line_0, ul.line_2, ul.line_4 {
+    margin-left: calc(66.5px * 0.7);
+  }
+  ul.line_1, ul.line_3 {
+    margin-right: calc(66.5px * 0.7);
+  }
+  ul.line_1, ul.line_2, ul.line_3, ul.line_4 {
+    margin-top: calc(-29px * 0.7);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  
+  div.crystals li div {
+    width: calc(113px * 0.6);
+    height: calc(236px * 0.6);
+  }
+  div.crystals li div:hover {
+    background-position: calc(-113px * 0.6) 0px;
+  }
+  ul.line_0, ul.line_2, ul.line_4 {
+    margin-left: calc(66.5px * 0.6);
+  }
+  ul.line_1, ul.line_3 {
+    margin-right: calc(66.5px * 0.6);
+  }
+  ul.line_1, ul.line_2, ul.line_3, ul.line_4 {
+    margin-top: calc(-29px * 0.6);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  
+  div.crystals li div {
+    width: calc(113px * 0.5);
+    height: calc(236px * 0.5);
+  }
+  div.crystals li div:hover {
+    background-position: calc(-113px * 0.5) 0px;
+  }
+  ul.line_0, ul.line_2, ul.line_4 {
+    margin-left: calc(66.5px * 0.5);
+  }
+  ul.line_1, ul.line_3 {
+    margin-right: calc(66.5px * 0.5);
+  }
+  ul.line_1, ul.line_2, ul.line_3, ul.line_4 {
+    margin-top: calc(-29px * 0.5);
   }
 }
 </style>

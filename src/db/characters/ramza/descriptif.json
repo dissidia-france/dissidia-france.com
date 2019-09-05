@@ -1,0 +1,17 @@
+{
+  "fullName": "Ramza Beoulve",
+  "age": 16,
+  "role": "Spécialiste",
+  "series": "Final Fantasy Tactics",
+  "va": {
+    "jp": "Shinnosuke Tachibana",
+    "en": "Phil LaMarr"
+  },
+  "video": "https://www.youtube.com/embed/Z0QgbqVu6Ec?iv_load_policy=3",
+  "sp": [{
+    "name": "Cri de Soutien",
+    "description": "Ramza peut charger son aptitude EX et crier pour booster les performances globales de ses alliés avec Encouragement, ou lui-même avec Hurlement"
+  }]
+ }
+
+

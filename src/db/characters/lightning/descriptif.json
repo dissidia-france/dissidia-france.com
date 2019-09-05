@@ -1,0 +1,17 @@
+{
+  "fullName": "Lightning",
+  "age": 21,
+  "role": "Assassin",
+  "series": "Final Fantasy XIII",
+  "va": {
+    "jp": "Maaya Sakamoto",
+    "en": "Ali Hillis"
+  },
+  "video": "https://www.youtube.com/embed/LGanWbw4rno?iv_load_policy=3",
+  "sp": [{
+    "name": "Changement de Stratégies",
+    "description": "Lightning peut changer à volonté de rôle entre Attaquant et Ravageur et adopter un style d’attaques physiques rapprochées ou bien de projectiles magiques"
+  }]
+ }
+
+

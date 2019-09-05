@@ -1,0 +1,15 @@
+{
+  "fullName": "Tidus",
+  "age": 17,
+  "role": "Assassin",
+  "series": "Final Fantasy X",
+  "va": {
+    "jp": "Masakazu Morita",
+    "en": "James Arnold Taylor"
+  },
+  "video": "https://www.youtube.com/embed/VO76E4Qvi_8?iv_load_policy=3",
+  "sp": [{
+    "name": "As du Dash",
+    "description": "Contrairement à tous les autres personnages, la plupart des attaques de Bravoure de Tidus doivent être effectuées au court d’un déplacement rapide"
+  }]
+ }

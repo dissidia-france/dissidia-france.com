@@ -1,0 +1,15 @@
+{
+  "fullName": "Zenos yae Galvus",
+  "age": "26",
+  "role": "Spécialiste",
+  "series": "Final Fantasy XIV",
+  "va": {
+    "jp": "Kosuke Toriumi",
+    "en": "Luke Allen-Gale"
+  },
+  "video": "https://www.youtube.com/embed/VE8hr6tiGL4?iv_load_policy=3&autoplay=1",
+  "sp": [{
+    "name": "Iaijutsu",
+    "description": "Zenos est capable avec son aptitude EX de choisir parmi trois attaques différentes, chacune pouvant activer un Sen de Samouraï"
+  }]
+ }

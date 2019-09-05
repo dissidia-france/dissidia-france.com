@@ -1,0 +1,15 @@
+{
+  "fullName": "Vayne Carudas Solidor",
+  "age": 27,
+  "role": "Combattant",
+  "series": "Final Fantasy XII",
+  "va": {
+    "jp": "Nobuo Tobita",
+    "en": "Elijah Alexander"
+  },
+  "video": "https://www.youtube.com/embed/QwyBI0KjENk?iv_load_policy=3",
+  "sp": [{
+    "name": "Combos Multidirectionnels",
+    "description": "Son combo de Bravoure de base peut se finir de cinq façons différentes, lui permettant d’envoyer sa cible où il le désire, et provoquer des Wall Rushs"
+  }]
+ }

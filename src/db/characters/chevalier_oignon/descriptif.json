@@ -1,0 +1,15 @@
+{
+  "fullName": "Chevalier Oignon",
+  "age": "Inconnu",
+  "role": "Spécialiste",
+  "series": "Final Fantasy III",
+  "va": {
+    "jp": "Jun Fukuyama",
+    "en": "Aaron Spann"
+  },
+  "video": "https://www.youtube.com/embed/QSqj3Ebu7j4?iv_load_policy=3",
+  "sp": [{
+    "name": "Maîtrise Épée et Magie",
+    "description": "Sa capacité à changer de Job entre Sage et Ninja pour maîtriser l’art du combat ou de la magie lui permet de s’adapter rapidement à son équipe et à la situation"
+  }]
+}

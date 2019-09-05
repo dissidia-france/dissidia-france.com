@@ -1,0 +1,16 @@
+{
+  "fullName": "Kuja",
+  "age": 24,
+  "role": "Assassin",
+  "series": "Final Fantasy IX",
+  "va": {
+    "jp": "Akira Ishida",
+    "en": "JD Cullum"
+  },
+  "video": "https://www.youtube.com/embed/v0rWMcRepmA?iv_load_policy=3",
+  "sp": [{
+    "name": "Divination Spirituelle",
+    "description": "L’aptitude EX de Kuja lui permet de donner un bonus de statistiques à son équipe, progressif à chaque utilisation et de passer en Transe à la troisième"
+  }]
+ }
+

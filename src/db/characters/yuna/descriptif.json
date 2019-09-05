@@ -1,0 +1,15 @@
+{
+  "fullName": "Yuna",
+  "age": 17,
+  "role": "Tireur",
+  "series": "Final Fantasy X",
+  "va": {
+    "jp": "Mayuko Aoki",
+    "en": "Hedy Burress"
+  },
+  "video": "https://www.youtube.com/embed/Cm8P91HZGwc?iv_load_policy=3",
+  "sp": [{
+    "name": "Invokeur de Besaid",
+    "description": "La chimère Valefore de Yuna arrive en soutien en prolongeant ses combos, en attaquant à distance, et même en la protégeant des attaques adverses"
+  }]
+}

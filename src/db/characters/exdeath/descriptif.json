@@ -1,0 +1,15 @@
+{
+  "fullName": "Exdeath",
+  "age": "Inconnu",
+  "role": "Spécialiste",
+  "series": "Final Fantasy V",
+  "va": {
+    "jp": "Naomi Kusumi",
+    "en": "Gerald C. Rivers"
+  },
+  "video": "https://www.youtube.com/embed/CHiRK3-5g1A?iv_load_policy=3",
+  "sp": [{
+    "name": "Tri-Désastre",
+    "description": "Les trois modes d’Exdeath lui permettent d’infliger de multiples altérations d’état à ses adversaires et lui procurent également trois aptitudes EX distinctes"
+  }]
+ }

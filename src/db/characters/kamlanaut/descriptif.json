@@ -1,0 +1,15 @@
+{
+  "fullName": "Kam'lanaut",
+  "age": "???",
+  "role": "Spécialiste",
+  "series": "Final Fantasy XI",
+  "va": {
+    "jp": "Satoshi Mikami",
+    "en": "Jeff Schine"
+  },
+  "video": "https://www.youtube.com/embed/j3V5YXhWPO8?iv_load_policy=3&autoplay=1",
+  "sp": [{
+    "name": "Mage-Lame Suprême",
+    "description": "Les attaques des lames élémentaires de Kam'lanaut peuvent se renforcer après avoir touché leurs cibles, et ainsi infliger plus de dégâts"
+  }]
+ }

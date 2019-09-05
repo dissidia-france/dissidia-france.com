@@ -1,0 +1,15 @@
+{
+  "fullName": "Cloud Strife",
+  "age": 23,
+  "role": "Combattant",
+  "series": "Final Fantasy VII",
+  "va": {
+    "jp": "Takahiro Sakurai",
+    "en": "Steve Burton"
+  },
+  "video": "https://www.youtube.com/embed/FNbVim8AGZw?iv_load_policy=3",
+  "sp": [{
+    "name": "Annulation de Charge",
+    "description": "Cloud peut charger toutes ses attaques pour en augmenter la force et la portée mais peut également annuler aussi simplement l’attaque s’il le souhaite"
+  }]
+ }

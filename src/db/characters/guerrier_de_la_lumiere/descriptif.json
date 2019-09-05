@@ -1,0 +1,15 @@
+{
+  "fullName": "Guerrier de la Lumière",
+  "age": "Inconnu",
+  "role": "Combattant",
+  "series": "Final Fantasy I",
+  "va": {
+    "jp": "Toshihiko Seki",
+    "en": "Grant George"
+  },
+  "video": "https://www.youtube.com/embed/L4Bap-3w7fk?iv_load_policy=3",
+  "sp": [{
+    "name": "Bouclier de Cornélia",
+    "description": "Apporte un réel soutien à son équipe avec des compétences permettant de forcer l'ennemi à le cibler et disposant de nombreuses contre-attaques"
+  }]
+}

@@ -1,0 +1,15 @@
+{
+  "fullName": "Kain Highwind",
+  "age": 21,
+  "role": "Assassin",
+  "series": "Final Fantasy IV",
+  "va": {
+    "jp": "Koichi Yamadera",
+    "en": "Liam O'Brien"
+  },
+  "video": "https://www.youtube.com/embed/9e3zbt5yo8Y?iv_load_policy=3",
+  "sp": [{
+    "name": "Dragon Célèste de Baron",
+    "description": "La capacité de Saut de Kain, dotée de trois niveaux différents, permet à Kain de s’abattre rapidement sur un ennemi même éloigné et lui infliger des dégâts"
+  }]
+ }

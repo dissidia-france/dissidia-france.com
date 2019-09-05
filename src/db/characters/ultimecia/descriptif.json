@@ -1,0 +1,15 @@
+{
+  "fullName": "Ultimecia",
+  "age": "Inconnu",
+  "role": "Tireur",
+  "series": "Final Fantasy VIII",
+  "va": {
+    "jp": "Atsuko Tanaka",
+    "en": "Tasia Valenza"
+  },
+  "video": "https://www.youtube.com/embed/o9eUOAiBhAc?iv_load_policy=3",
+  "sp": [{
+    "name": "Maléficium",
+    "description": "L’état Maléficium augmente les dégâts des attaques de Bravoure d’Ultimecia<br>Le niveau de cet état augmente en attaquant de façon répétée ses ennemis"
+  }]
+ }

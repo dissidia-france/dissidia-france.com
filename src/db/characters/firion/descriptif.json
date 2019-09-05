@@ -1,0 +1,15 @@
+{
+  "fullName": "Firion",
+  "age": 18,
+  "role": "Combattant",
+  "series": "Final Fantasy II",
+  "va": {
+    "jp": "Hikaru Midorikawa",
+    "en": "Johnny Yong Bosch"
+  },
+  "video": "https://www.youtube.com/embed/Zx3taLwtYtQ?iv_load_policy=3",
+  "sp": [{
+    "name": "Arsenal Infernal",
+    "description": "Seul personnage à pouvoir enchainer ses attaques de Bravoure au sol dans un ordre non prédéfini lui offrant 27 possibilités de combos différents au sol"
+  }]
+}

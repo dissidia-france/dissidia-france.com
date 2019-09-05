@@ -1,0 +1,15 @@
+{
+  "fullName": "Sephiroth",
+  "age": "La vingtaine",
+  "role": "Combattant",
+  "series": "Final Fantasy VII",
+  "va": {
+    "jp": "Toshiyuki Morikawa",
+    "en": "George Newbern"
+  },
+  "video": "https://www.youtube.com/embed/U0XJGqMp8d8?iv_load_policy=3",
+  "sp": [{
+    "name": "Dash Cancel Légendaire",
+    "description": "Sephiroth est capable avec un timing bien précis, après ses attaques de Bravoure à l’épée, d’enchainer sur Dash plus rapide pour poursuivre sa cible "
+  }]
+ }

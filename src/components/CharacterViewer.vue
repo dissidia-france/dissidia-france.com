@@ -8,7 +8,7 @@
             <div class="modal-buttons">
               <button class="close-button" @click="$emit('close', $event.target.className)">Retour</button>
               <div class="description-buttons">
-                <button class="movelist-button" @click="toggleMovelist">{{ toggleMovelistTab }}</button>
+                <button title="Bientôt!" class="movelist-button" v-show="false" disabled>{{ toggleMovelistTab }}</button>
                 <button class="video-button" @click="toggleVideo">{{ toggleVideoTab }}</button>
               </div>
             </div>
@@ -43,6 +43,9 @@
                     </table>
                   </div>
                   <div v-html="character.data.description" class="chara-description"></div>
+                  <div class="chara-unique" :style="{ backgroundImage: 'url(' + require('../assets/abilities/' + selected + '.png') + ')' }">
+                    <p v-html="character.data.profile.sp[0].description"></p>
+                  </div>
                 </div>
               </template>
               <template v-else>
@@ -54,8 +57,8 @@
                 </div>
               </template>
             </template>
-            <template v-else>
-              <h2>Movelist</h2>
+            <template v-else-if="false">
+<!--               <h2>Movelist</h2>
               <div class="movelist-wrapper">
                 <table class="special-table">
                   <tbody>
@@ -144,7 +147,7 @@
                           </tr>
                         </template>
                         <tr v-if="exAttack.cooldown !== undefined" >
-                          <td class="move-description" colspan="3">Cooldown de {{ exAttack.cooldown }} secondes.</td>
+                          <td class="move-description" colspan="4">Cooldown de {{ exAttack.cooldown }} secondes.</td>
                         </tr>
                       </template>
                     </template>
@@ -153,7 +156,7 @@
                     </tr>
                   </tbody>
                 </table>
-              </div>
+              </div> -->
             </template>
           </div>
         </div>
@@ -175,7 +178,7 @@ export default {
         'data': {}
       },
       toggle: true,
-      toggleMovelistTab: 'Movelist',
+      toggleMovelistTab: 'Commandes',
       toggleVideoTab: 'Vidéo',
       toggle2: true
     }
@@ -185,18 +188,18 @@ export default {
       // This function needs to handle improper input too!!
       this.character.name = character
       this.character.data = this.characters[character]
-      if (require('../db/characters/' + character + '/movelist.json') !== undefined) {
-        this.character.data.movelist = require('../db/characters/' + character + '/movelist.json')
-      } else {
-        this.character.data.movelist = {}
-      }
-      if (require('../db/characters/' + character + '/description.html') !== undefined) {
-        this.character.data.description = require('../db/characters/' + character + '/description.html')
+      // if (require('../db/characters/' + character + '/movelist.json') !== undefined) {
+      //   this.character.data.movelist = require('../db/characters/' + character + '/movelist.json')
+      // } else {
+      //   this.character.data.movelist = {}
+      // }
+      if (require('../db/characters/' + character + '/descriptif.html') !== undefined) {
+        this.character.data.description = require('../db/characters/' + character + '/descriptif.html')
       } else {
         this.character.data.description = null
       }
-      if (require('../db/characters/' + character + '/description.json') !== undefined) {
-        this.character.data.profile = require('../db/characters/' + character + '/description.json')
+      if (require('../db/characters/' + character + '/descriptif.json') !== undefined) {
+        this.character.data.profile = require('../db/characters/' + character + '/descriptif.json')
       } else {
         this.character.data.profile = null
       }
@@ -254,7 +257,6 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-/*  min-width: 1000px;*/
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
   display: table;
@@ -269,13 +271,18 @@ export default {
 .chara-container {
   width: 100%;
   max-width: 1200px;
+  height: 650px;
   margin: 0px auto;
-  height: 540px;
   /*height: 100vh;*/
-  background-color: #272727;
+  background-color: rgb(27,27,27);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 130px -130px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
   /*overflow-y: auto;*/
+  color: #ccd6dd;
 /*  background-image: url('../assets/clouds.jpg');
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -292,7 +299,7 @@ export default {
 
 .movelist-wrapper {
   /*height: calc(100vh - 100px);*/
-  height: 451px;
+  height: 601px;
   margin: 0 30px;
   overflow-y: auto;
 }
@@ -372,7 +379,7 @@ th.movelist-disclaimer {
   margin-bottom: 20px;
   width: calc(100% - 50px);
   font-size: 20px;
-  font-family: Verdana, Arial, sans-serif;
+  font-family: 'DissidiaFont', Verdana, sans-serif;
 }
 
 .modal-buttons button {
@@ -387,6 +394,7 @@ th.movelist-disclaimer {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
+  z-index: 1;
 }
 
 .chara-video iframe {
@@ -402,15 +410,33 @@ th.movelist-disclaimer {
   font-size: 14px;
   font-family: Helvetica, Arial, sans-serif;
   text-align: justify;
+  margin-bottom: 20px;
   /*background-color: #BDBDBD;
   color: #212121;*/
+}
+
+.chara-unique {
+  width: 100%;
+  min-height: 60px;
+  background-position: top center;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.chara-unique p {
+  padding-top: 80px;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .chara-description-wrapper {
   margin: 0 30px;
   width: calc(100% - 60px);
   overflow-y: auto;
-  max-height: 450px;
+  max-height: 600px;
 }
 
 .chara-profile {
@@ -451,9 +477,25 @@ th.movelist-disclaimer {
 }
 
 @media screen and (orientation: portrait) {
+
+  .chara-mask {
+    display: block;
+  }
+
+  .chara-wrapper {
+    display: block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .chara-unique p {
+    font-size: 1.5em;
+  }
+
   button {
-    font-size: 25px;
+    font-size: 0.8em;
     padding: 0.4em 0.7em;
+    max-width: 110px;
   }
 
   .chara-container {
@@ -467,7 +509,7 @@ th.movelist-disclaimer {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 75px;
     overflow-y: auto;
     overflow-x: hidden;
     text-align: left;
@@ -476,25 +518,24 @@ th.movelist-disclaimer {
   .movelist-wrapper {
     /*height: calc(100vh - 100px);*/
     height: auto;
-    margin: 0 30px;
+    margin: 0 15px;
   } 
 
   .chara-content-wrapper h2 {
     margin: 0.5em auto;
     margin-bottom: 1em;
     text-align: center;
-    font-size: 3em;
+    font-size: 1.5em;
   }
 
   .modal-buttons {
-    padding: 10px;
     width: 100%;
     margin: 0 auto;
     display: block;
   }
 
   .description-buttons {
-    width: 350px;
+    width: 280px;
     margin: 0 auto;
     text-align: center;
   }
@@ -508,11 +549,11 @@ th.movelist-disclaimer {
 
   .modal-buttons button.close-button {
     position: absolute;
-    right: 25px;
-    bottom: 25px;
-    font-size: 3em;
-    height: 100px;
+    right: 15px;
+    bottom: 15px;
+    font-size: 1.2em;
     margin: 0;
+    z-index: 2;
   }
 
 /*  .modal-buttons button.close-button:before {
@@ -526,7 +567,8 @@ th.movelist-disclaimer {
   .chara-description {
     width: 90%;
     margin: 0 auto;
-    font-size: 2.2em;
+    font-size: 1.2em;
+    line-height: 1.2em;
     font-family: Helvetica, Arial, sans-serif;
     text-align: justify;
     /*background-color: #BDBDBD;
@@ -547,14 +589,14 @@ th.movelist-disclaimer {
   }
 
   .chara-profile table {
-    width: 90%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 400px;
     margin: 0 auto;
     margin-bottom: 40px;
   }
 
   .chara-profile table td, .chara-profile table th {
-    font-size: 1.9em;
+    font-size: 1.5em;
   }
 
   table.special-table {
@@ -562,7 +604,7 @@ th.movelist-disclaimer {
   }
 
   table.special-table tr {
-    font-size: 2em;
+    font-size: 1.2em;
   }
 
   table.special-table td, table.special-table th {
@@ -575,21 +617,64 @@ th.movelist-disclaimer {
 
   table.movelist-table td {
     padding: 0.35em;
-    font-size: 2.2em;
+    font-size: 1.2em;
   }
 
   table.movelist-table td.move-description{
-    font-size: 2.1em;
+    font-size: 1.1em;
     padding: 0.35em 0.55em;
   }
 
   th.movelist-disclaimer {
-    font-size: 1.8em;
+    font-size: 0.9em;
     padding: 0.55em;
   }
 }
 
-@media screen and (max-width: 1200px) and (orientation: landscape) {
+@media screen and (max-width: 850px) and (orientation: landscape) {
 
+  .chara-container {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  .chara-description-wrapper {
+    height: calc(100% - 79px);
+    overflow-y: auto;
+    margin: 0 15px;
+    width: calc(100% - 30px);
+  }
+
+  .chara-content-wrapper {
+    width: calc(99% - 329px);
+    height: 100%;
+  }
+
+  .chara-content-wrapper h2 {
+    font-size: 1em;
+  }
+
+  .movelist-wrapper {
+    height: calc(100% - 79px);
+  }
+
+  .chara-unique p {
+    padding-top: 40px;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 650px) and (orientation: landscape) {
+
+  .chara-content-wrapper {
+    width: calc(99% - 282px);
+  }
+}
+
+@media screen and (max-width: 580px) and (orientation: landscape) {
+
+  .chara-content-wrapper {
+    width: calc(99% - 240px);
+  }
 }
 </style>

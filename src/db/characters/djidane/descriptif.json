@@ -1,0 +1,15 @@
+{
+  "fullName": "Djidane Tribal",
+  "age": 16,
+  "role": "Assassin",
+  "series": "Final Fantasy IX",
+  "va": {
+    "jp": "Romi Park",
+    "en": "Bryce Papenbrook"
+  },
+  "video": "https://www.youtube.com/embed/kqA80BMwj34?iv_load_policy=3",
+  "sp": [{
+    "name": "Malandrin de Terra",
+    "description": "L’attaque en Dash de Djidane lui permet de voler des statistiques à sa cible, il peut ainsi obtenir un bonus d’attaque, de défense et de vitesse volés à l’ennemi"
+  }]
+ }

@@ -1,0 +1,15 @@
+{
+  "fullName": "Jecht",
+  "age": "La trentaine",
+  "role": "Assassin",
+  "series": "Final Fantasy X",
+  "va": {
+    "jp": "Masuo Amada",
+    "en": "Gregg Berger"
+  },
+  "video": "https://www.youtube.com/embed/4PqRtRRvDyI?iv_load_policy=3",
+  "sp": [{
+    "name": "Expert du Parry & Cancel",
+    "description": "Avec ses parades et son aptitude EX lui permettant d’interrompre n’importe quelle attaque, Jecht peut détruire la Bravoure d’un ennemi très rapidement"
+  }]
+ }

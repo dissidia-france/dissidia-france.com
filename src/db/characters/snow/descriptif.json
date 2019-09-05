@@ -1,0 +1,15 @@
+{
+  "fullName": "Snow Villiers",
+  "age": "23 ou 523",
+  "role": "Combattant",
+  "series": "Final Fantasy XIII",
+  "va": {
+    "jp": "Daisuke Ono",
+    "en": "Troy Baker"
+  },
+  "video": "https://www.youtube.com/embed/GvMtxlhaOk0?iv_load_policy=3",
+  "sp": [{
+    "name": "Malédiction du L'cie",
+    "description": "Snow se transforme petit à petit en Cie’th lorsqu’il perd des points de vie, ce qui a pour effet de renforcer les propriétés de toutes ses attaques"
+  }]
+ }
