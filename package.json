@@ -12,7 +12,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "es6-promise": "^4.2.2",
-    "marked": "^0.3.12",
+    "marked": "^4.0.10",
     "moment": "^2.20.1",
     "v-viewer": "^0.3.1",
     "vue": "^2.4.2",
