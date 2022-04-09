@@ -13,7 +13,7 @@
     "axios": "^0.17.1",
     "es6-promise": "^4.2.2",
     "marked": "^0.3.12",
-    "moment": "^2.20.1",
+    "moment": "^2.29.2",
     "v-viewer": "^0.3.1",
     "vue": "^2.4.2",
     "vue-analytics": "^5.8.0",
